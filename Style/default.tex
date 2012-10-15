@@ -1,0 +1,59 @@
+\documentclass[11pt,a4paper,xetex]{moderncv}
+
+
+\usepackage{fontspec,xunicode,xltxtra} % 加载 xetex 的宏包
+
+% 以下是英文字体的设置
+\defaultfontfeatures{Scale=MatchLowercase} % 这个参数保证 serif、sans-serif 和 monospace 字体在小写时大小匹配
+\setmainfont[Numbers=OldStyle,Mapping=tex-text]{Arial} % 使用 Garamond 字体，把数字设置为等宽，比较好看
+\setsansfont[Mapping=tex-text]{Arial} % 使用 XeTeX 的 text-mapping 方案，正确显示 LaTeX 样式的双引号（`` ''）
+\setmonofont{Menlo}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+% 以下是中文字体的设置
+\usepackage[slantfont,boldfont,CJKnumber]{xeCJK} % 加载 xeCJK，允许斜体、粗体和 CJK 数字以及 CJK 对空格的设置
+\setCJKmainfont[BoldFont={STHeiti}, ItalicFont={STKaiti}]{STFangsong}
+\setCJKsansfont{STKaiti}
+\setCJKmonofont{STFangsong}
+\setCJKfamilyfont{song}{STSong}
+\setCJKfamilyfont{kai}{STKaiti}
+\setCJKfamilyfont{hei}{STHeiti}
+\setCJKfamilyfont{xinwei}{STXinwei}
+\setCJKfamilyfont{hwkai}{STKaiti}
+\setCJKfamilyfont{hwfs}{STFangsong}
+\setCJKfamilyfont{hws}{STSong}
+\setCJKfamilyfont{fs}{STFangsong}
+\setCJKfamilyfont{yahei}{STHeiti}
+
+\newcommand\song{\CJKfamily{song}}
+\newcommand\kai{\CJKfamily{kai}}
+\newcommand\hei{\CJKfamily{hei}}
+\newcommand\xinwei{\CJKfamily{xinwei}}
+\newcommand\hwkai{\CJKfamily{hwkai}}
+\newcommand\hwfs{\CJKfamily{hwfs}}
+\newcommand\hws{\CJKfamily{hws}}
+\newcommand\fs{\CJKfamily{fs}}
+\newcommand\yahei{\CJKfamily{yahei}}
+
+\newcommand{\erhao}{\fontsize{22pt}{\baselineskip}\selectfont}
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}
+\newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosanhao}{\fontsize{15pt}{\baselineskip}\selectfont}
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
+\newcommand{\liuhao}{\fontsize{7.5pt}{\baselineskip}\selectfont}
+
+% moderncv themes
+\moderncvtheme[blue,roman]{classic}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+\nopagenumbers{}

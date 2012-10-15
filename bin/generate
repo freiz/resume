@@ -1,0 +1,18 @@
+#!/bin/bash
+
+function compileAndClean {
+	for texSource in `ls *.tex`;
+	do xelatex $texSource;
+	done;
+	rm *.aux *.log *.out
+}
+
+name1=BaojunSu
+name2=JingZhao
+
+cd $name1
+compileAndClean
+cd ..
+cd $name2
+compileAndClean
+
