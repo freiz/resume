@@ -10,9 +10,8 @@ function compileAndClean {
 name1=BaojunSu
 name2=JingZhao
 
-cd $name1
+cd src
 compileAndClean
 cd ..
-cd $name2
-compileAndClean
 
+mv src/*.pdf output
