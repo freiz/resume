@@ -1,20 +1,18 @@
-\documentclass[11pt,a4paper,xetex]{moderncv}
+\documentclass[11pt,a4paper,roman,xelatex]{moderncv}
 
 
-\usepackage{fontspec,xunicode,xltxtra} % 加载 xetex 的宏包
+\usepackage{fontspec,xunicode,xltxtra} 
 
-% 以下是英文字体的设置
-\defaultfontfeatures{Scale=MatchLowercase} % 这个参数保证 serif、sans-serif 和 monospace 字体在小写时大小匹配
-\setmainfont[Numbers=OldStyle,Mapping=tex-text]{Garamond} % 使用 Garamond 字体，把数字设置为等宽，比较好看
-\setsansfont[Mapping=tex-text]{Arial} % 使用 XeTeX 的 text-mapping 方案，正确显示 LaTeX 样式的双引号（`` ''）
-\setmonofont{Source Code Pro}
-\XeTeXlinebreaklocale "zh"
-\widowpenalty=10000
+% English font settings
+\defaultfontfeatures{Mapping=tex-text, Numbers={OldStyle}}
+\setmainfont[Ligatures={Common, Rare}, Alternate=1]{Hoefler Text}
+\setsansfont[Scale=0.95]{Optima Regular}
+\setmonofont[Scale=0.85]{Source Code Pro}
 
 % 以下是中文字体的设置
-\usepackage[slantfont,boldfont,CJKnumber]{xeCJK} % 加载 xeCJK，允许斜体、粗体和 CJK 数字以及 CJK 对空格的设置
-\setCJKmainfont[BoldFont={STHeiti}, ItalicFont={STKaiti}]{STFangsong}
-\setCJKsansfont{STKaiti}
+\usepackage[slantfont,boldfont,CJKnumber]{xeCJK} 
+\setCJKmainfont[BoldFont={STHeiti}, ItalicFont={STHeiti}]{STKaiti}
+\setCJKsansfont{STHeiti Medium}
 \setCJKmonofont{STFangsong}
 \setCJKfamilyfont{song}{STSong}
 \setCJKfamilyfont{kai}{STKaiti}
@@ -45,14 +43,13 @@
 \newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
 \newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
 \newcommand{\liuhao}{\fontsize{7.5pt}{\baselineskip}\selectfont}
+\XeTeXlinebreaklocale "zh"
 
 % moderncv themes
-\moderncvtheme[blue,roman]{classic}
-
-% character encoding
-\usepackage[utf8]{inputenc}
+\moderncvtheme[blue]{classic}
 
 % adjust the page margins
+\widowpenalty=10000
 \usepackage[scale=0.85]{geometry}
 \AtBeginDocument{\recomputelengths}
 
