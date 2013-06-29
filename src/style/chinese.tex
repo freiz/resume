@@ -10,10 +10,14 @@
 \setmonofont[Scale=0.85]{Source Code Pro}
 
 % 以下是中文字体的设置
-\usepackage[slantfont,boldfont,CJKnumber]{xeCJK} 
-\setCJKmainfont[BoldFont={STHeiti}, ItalicFont={STHeiti}]{STKaiti}
-\setCJKsansfont{STHeiti Medium}
-\setCJKmonofont{STFangsong}
+\usepackage[slantfont,boldfont,CJKnumber]{xeCJK}
+\xeCJKsetup{
+    AutoFakeBold=false,
+    AutoFakeSlant=false,
+}
+\setCJKmainfont[BoldFont=STHeiti, ItalicFont={STKaiti}]{STFangsong}
+\setCJKsansfont{STHeiti}
+\setCJKmonofont{STHeiti}
 \setCJKfamilyfont{song}{STSong}
 \setCJKfamilyfont{kai}{STKaiti}
 \setCJKfamilyfont{hei}{STHeiti}
@@ -50,7 +54,7 @@
 
 % adjust the page margins
 \widowpenalty=10000
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.75]{geometry}
 \AtBeginDocument{\recomputelengths}
 
 \nopagenumbers{}
