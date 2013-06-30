@@ -7,9 +7,6 @@ function compileAndClean {
 	rm *.aux *.log *.out
 }
 
-name1=BaojunSu
-name2=JingZhao
-
 cd src
 compileAndClean
 cd ..
