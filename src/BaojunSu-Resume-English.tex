@@ -1,13 +1,11 @@
 \input{style/english}
 
-% Personal Data
 \firstname{Baojun}
 \familyname{Su}
-\mobile{+86(010)13439819854}
+\mobile{+86(512)18625240866}
 \email{freizsu@gmail.com}
 \quote{Do everything seriously}
 
-% Content
 \begin{document}
 \maketitle
 
@@ -17,55 +15,56 @@
 \cventry{2004 -- 2008}{Bachelor}{Jiangsu University of Science and Technology}{Information and Computing Sciences}{}{}
 
 \section{Work Background}
-\cventry{2012.9 -- ~~~~~~~~~~}{Software Develop Engineer}{Microsoft STC}{Beijing}{}{Campaign recommendation, bidding and budget suggestion.}
+\cventry{2012.9 -- ~~~~~~~~~~}{Software Develop Engineer}{Microsoft STC}{Suzhou}{}{Distributed key-value datastore, campaign recommendation.}
 \cventry{2011.4 -- 2012.8}{Applied Research Engineer}{Netease Youdao}{Beijing}{}{Crawler, webpage parser and analyzer, ranking.}
 
 \section{Technical Ability}
-\cvitem{Programming Language}{Java, Python, C, Scala, C\#, Matlab, SQL.}
-\cvitem{Database Technology}{SQL Server, Mongodb, Kyoto Cabinet, Self implemented DHT.}
+\cvitem{Programming Language}{Java, Python, C, C\#, Matlab, SQL.}
+\cvitem{Database Technology}{SQL server, mongodb, kyoto cabinet, self implemented distributed key-value datastore.}
 \cvitem{Profiling}{Algorithm profiling, service profiling.}
 \cvitem{Large-Scale Data Processing}{Experienced with big data processing technology, familiar with several stacks including CoWork/ODFS/OMap in Youdao and Cosmos in Microsoft.}
-\cvitem{Data Mining}{Familiar with common models and algorithms of Data Mining, has in-depth study of online learning, text classification and collaborative filtering algorithms.}
+\cvitem{Data Mining}{Familiar with common models and algorithms of data mining, has in-depth study of online learning, text classification and collaborative filtering algorithms.}
 \cvitem{English}{471 points in CET-6, good English reading and speaking ability.}
-\cvitem{Math}{Solid math foundation.}
 
 \section{Projects}
-\subsection{Product Recommendation Service}
-\cvitem{Introduction}{Recommend inventories to advertisers in display advertising business.}
-\cvitem{Timeline}{2012.9 -- 2013.4}
-\cvitem{Duty}{Experiments and algorithms implementation including content-based and collaborative filtering algorithms, and common utility such as evaluation, profiling and instrumentation.}
-\cvitem{Results}{The feedbacks from users are mostly positive, the accuracy improved from 66\% to 73\%.}
-\subsection{Timeliness Web Crawler}
-\cvitem{Introduction}{Crawl news from portal sites, forums, microblogs with low latency.}
-\cvitem{Timeline}{2011.10 -- 2012.4}
-\cvitem{Duty}{Project leader with three team members.}
-\cvitem{Results}{The timeliness coverage rate has been catching up with Baidu.}
-\subsection{Efficiency optimization of DNS Resolve}
-\cvitem{Introduction}{The DNS lookup rate was becoming the bottleneck of main crawler's efficiency and we try to speedup it.}
-\cvitem{Timeline}{2011.4 -- 2011.6}
-\cvitem{Duty}{Project leader and the only programmer.}
-\cvitem{Results}{The rate of DNS resolving has been sped up by an order of magnitude.}
-\subsection{The Application of incremental SVMs in Large-Scale Email Spam Filtering}
-\cvitem{Introduction}{National 863 Project}
-\cvitem{Timeline}{2008 -- 2009}
-\cvitem{Duty}{Project leader, I have built the architecture of our system and implemented most classifiers.}
-\cvitem{Results}{The spam filtering system named TGANG is in a leading position internationally both in accuracy and efficiency.}
-\subsection{Terminator}
-\cvitem{Introduction}{Individual projects, a two-layer ensemble spam filter.}
-\cvitem{url}{\url{https://code.google.com/p/terminator/}}
-\cvitem{Timeline}{2009 -- 2010}
-\cvitem{Results}{Ensemble 8 advanced classifiers, can achieve the best results on \emph{All} public datasets.}
+
+  \subsection{Distributed Key-Value Datastore}
+  \cvitem{Introduction}{Online serving data in TB and at the same time with low latency, with the ability to plugin user logic as SPROC.}
+  \cvitem{Timeline}{2013.10 -- 2014.9}
+  \cvitem{Duty}{System design, part of implementation, performance tuning.}
+  \cvitem{Results}{Compared to the old system hosted on SQL Server, the .95 has been reduced to 1/3 to 1/10 with the same request, and at the same time increased the flexibility and the readability of SPROC.}
+
+  \subsection{Product Recommendation Service}
+  \cvitem{Introduction}{Recommend inventories to advertisers in display advertising business.}
+  \cvitem{Timeline}{2012.9 -- 2013.4}
+  \cvitem{Duty}{Experiments and algorithms implementation including content-based and collaborative filtering algorithms, and common utility such as evaluation, profiling and instrumentation.}
+  \cvitem{Results}{The feedbacks from users are mostly positive, the accuracy improved from 66\% to 73\%.}
+
+  \subsection{Timeliness Web Crawler}
+  \cvitem{Introduction}{Crawl news from portal sites, forums, microblogs with low latency.}
+  \cvitem{Timeline}{2011.10 -- 2012.4}
+  \cvitem{Duty}{Project leader with three team members, architecture design and implementation.}
+  \cvitem{Results}{The timeliness coverage rate has been catching up with Baidu after this system going online, compared to nearly no timely results before.}
+
+  \subsection{Efficiency Optimization of DNS Resolve}
+  \cvitem{Introduction}{The DNS lookup latency has been becoming the bottleneck of main crawler's efficiency and we try to speedup it.}
+  \cvitem{Timeline}{2011.4 -- 2011.6}
+  \cvitem{Duty}{Performance optimization.}
+  \cvitem{Results}{The DNS lookup latency has been sped up by above 10 times.}
+
+  \subsection{Terminator}
+  \cvitem{Introduction}{A two-layer ensemble spam filter, open sourced at github.}
+  \cvitem{url}{\url{https://github.com/freiz/terminator}}
+  \cvitem{Timeline}{2009 -- 2010}
+  \cvitem{Results}{Implemented my ensemble algorithm and ensembled 8 advanced classifiers, can achieve the best results on \emph{All} public datasets.}
 
 \section{Experience}
-\subsection{Scholarship}
-\cvitem{2009}{Second Prize Scholarship of Zhejiang University.}
-\subsection{Open Source}
-\cvitem{2010}{Wrote the NSNB spam filter in Python, which won the first place in large-scale spam filtering competition of Eights Symposium of Search Engine and Web Mining. Now NSNB is open sourced at \url{http://code.google.com/p/nsnb}.}
-\subsection{Publications}
+
+  \subsection{Open Source}
+  \cvitem{2010}{NSNB spam filter won the first place in large-scale spam filtering competition of Eights Symposium of Search Engine and Web Mining, which is implemented in Python and open sourced at \url{http://code.google.com/p/nsnb}.}
+
+\section{Publications}
 \cvlistitem{Baojun Su, Congfu Xu. Not so na\"{i}ve online Bayesian spam filter. In: Proceedings of the 21st conference on Innovative Application of Artificial Intelligence (IAAI 2009), July 14-16, 2009, Pasadena, CA, pages 147-152.}
 \cvlistitem{Congfu Xu, Chunliang Hao, Baojun Su. Research on Markov logic networks. Chinese Journal of Software, 2011, 22(8): 1699-1713. (In Chinese with English abstract)}
-
-\section{Self Assessment}
-\cvitem{}{I am a quick learner and nice team member, with rich developing experience and good understanding of pattern recognition and machine learning.}
 
 \end{document}
