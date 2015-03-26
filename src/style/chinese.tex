@@ -1,12 +1,12 @@
-\documentclass[11pt,a4paper,roman,xelatex]{moderncv}
+\documentclass[10.5pt,a4paper,roman,xelatex]{moderncv}
 
 \usepackage{fontspec,xunicode,xltxtra} 
 
 % English font settings
-\defaultfontfeatures{Mapping=tex-text, Numbers={OldStyle}}
-\setmainfont[Ligatures={Common, Rare, Historical}]{Hoefler Text}
-\setsansfont[Scale=0.95]{Optima Regular}
-\setmonofont[Scale=0.85]{Source Code Pro}
+\defaultfontfeatures{Ligatures=TeX, Numbers={OldStyle}}
+\setmainfont{Hoefler Text}
+\setsansfont{Optima Regular}
+\setmonofont[Scale=0.90, Ligatures=NoCommon, Numbers={Lining, Monospaced}]{Source Code Pro}
 
 % Chinese font settings
 \usepackage[slantfont,boldfont,CJKnumber]{xeCJK}
@@ -14,9 +14,9 @@
     AutoFakeBold=false,
     AutoFakeSlant=false,
 }
-\setCJKmainfont[BoldFont=STHeiti, ItalicFont={STKaiti}]{STFangsong}
-\setCJKsansfont{STHeiti}
-\setCJKmonofont{STHeiti}
+\setCJKmainfont[BoldFont=Hiragino Sans GB, ItalicFont={STKaiti}]{STSong}
+\setCJKsansfont{Hiragino Sans GB}
+\setCJKmonofont{Hiragino Sans GB}
 \setCJKfamilyfont{song}{STSong}
 \setCJKfamilyfont{kai}{STKaiti}
 \setCJKfamilyfont{hei}{STHeiti}
@@ -46,7 +46,7 @@
 
 % adjust the page margins
 \widowpenalty=10000
-\usepackage[scale=0.81]{geometry}
+\usepackage[scale=0.8]{geometry}
 \AtBeginDocument{\recomputelengths}
 
 \nopagenumbers{}
