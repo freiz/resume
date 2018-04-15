@@ -1,7 +1,10 @@
+% !TEX program = xelatex
+
+\input{style/english}
 
 \firstname{Baojun}
 \familyname{Su}
-\mobile{+86(512)18625240866}
+\mobile{+86 18625240866}
 \email{freizsu@gmail.com}
 \quote{Do everything seriously}
 
@@ -14,46 +17,64 @@
 \cventry{2004 -- 2008}{Bachelor}{Jiangsu University of Science and Technology}{Information and Computing Sciences}{}{}
 
 \section{Work Background}
-\cventry{2012.9 -- ~~~~~~~~~~}{Sr. Software Engineer}{Microsoft STC}{Suzhou}{}{Ads platform, distributed key-value datastore}
-\cventry{2011.4 -- 2012.8}{Applied Research Engineer}{Netease Youdao}{Beijing}{}{Crawler, web page parser and analyzer, ranking.}
+\cventry{2017.2~~ -- now~~}{Sr. Software Engineer}{Microsoft}{Suzhou}{}{Campaign management platform, tech lead}
+\cventry{2015.2~~ -- 2017.1~~}{Software Engineer \Romannum{2}}{Microsoft}{Suzhou}{}{Campaign management platform, tech lead}
+\cventry{2013.11 -- 2015.1~~}{Software Engineer}{Microsoft}{Suzhou}{}{Distributed key-value datastore}
+\cventry{2012.9~~ -- 2013.10}{Software Engineer}{Microsoft}{Beijing}{}{Ad recommandation}
+\cventry{2011.4~~ -- 2012.8~~}{Applied Research Engineer}{Netease Youdao}{Beijing}{}{Crawler, web page parser and analyzer, search ranking.}
 
 \section{Technical Ability}
 \cvitem{Programming Language}{Java, Python, C, C\#, Matlab, SQL.}
-\cvitem{Database Technology}{SQL Server, Mongodb, self implemented distributed key-value datastore.}
-\cvitem{Profiling}{Algorithm profiling, service profiling.}
-\cvitem{Machine Learning}{Familiar with common models and algorithms of data mining, has in-depth study of online learning, text classification and collaborative filtering algorithms.}
-\cvitem{English}{471 points in CET-6, good English reading and speaking ability.}
+\cvitem{Database Technology}{Microsoft SQL Server, Mongodb, self implemented distributed key-value datastore.}
+\cvitem{Machine Learning}{Familiar with common models and algorithms of machine learning and data mining, has in-depth study of online learning, text classification, collaborative filtering, and deep learning.}
+\cvitem{Performance Tuning}{Expert in Algorithm performance tuning, service performance turning.}
+\cvitem{English}{471 points in CET-6, good English reading and speaking ability, over 5 years experience using English as primary language at work.}
 
 \section{Projects}
 
+  \subsection{AdExtension Framework}
+  \cvitem{Introduction}{A dynamic framework to speed up developing new extension types for Bing Ads campaign platform.}
+  \cvitem{Timeline}{2015.8 -- 2016.3}
+  \cvitem{Duty}{System design, implementation, tech lead.}
+  \cvitem{Results}{We implemented dynamic logic using reflection in every components of the service. With static code generation tool, 
+  developing new extension type can be as easy as writing a new C\# class. The development time consumption can be reduced from 1/2 year to 1 week.}
+
   \subsection{Distributed Key-Value Datastore}
-  \cvitem{Introduction}{Online serving datastore, serving TB data with low latency and can scale out horizontally, with the ability to plugin user logic as SPROC.}
+  \cvitem{Introduction}{Online serving datastore, serving TB data with low latency and can scale out horizontally, with the ability to plugin user logic as SPROC in C\#.}
   \cvitem{Timeline}{2013.10 -- 2014.9}
-  \cvitem{Duty}{System design, part of implementation, performance tuning.}
-  \cvitem{Results}{Compared to the old system hosted on SQL Server, the .95 has been reduced to 1/10 with the same request, and at the same time increased the flexibility and the readability of SPROC.}
+  \cvitem{Duty}{System design, implementation, performance tuning.}
+  \cvitem{Results}{After migrated the backend of a production service from SQL Server to the new data store, 
+  the .95 has been reduced to \emph{1/10} with the same request, and at the same time increased the flexibility and the readability of SPROC.}
 
   \subsection{Timeliness Web Crawler}
   \cvitem{Introduction}{Crawl news from portal sites, forums, microblogs with low latency.}
   \cvitem{Timeline}{2011.10 -- 2012.4}
   \cvitem{Duty}{Project leader with three team members, architecture design and implementation.}
-  \cvitem{Results}{The timeliness coverage rate has been catching up with Baidu after this system going online, compared to nearly no timely results before.}
+  \cvitem{Results}{The solution is we first mine the page library to identify possible seed pages, 
+  and calculate an estimated refresh interval per seed page then setup a fast flow to crawl the seed page set according to the refresh interval.
+  The timeliness coverage rate has been catching up with Baidu after this system going online, compared to nearly no timely results before.}
 
   \subsection{Efficiency Optimization of DNS Resolve}
   \cvitem{Introduction}{The DNS lookup latency has been becoming the bottleneck of main crawler's efficiency and we try to speedup it.}
   \cvitem{Timeline}{2011.4 -- 2011.6}
   \cvitem{Duty}{Performance optimization.}
-  \cvitem{Results}{The DNS lookup latency has been sped up by above 10 times.}
+  \cvitem{Results}{Upgraded the DNS query logic from multi-thread synchornize call to multi-thread asynchornize call. 
+  The DNS lookup job latency has been reduced to less than \emph{1/10} than before.}
 
-  \subsection{Terminator}
-  \cvitem{Introduction}{A two-layer ensemble spam filter, open sourced at github.}
-  \cvitem{url}{\url{https://github.com/freiz/terminator}}
+  \subsection{GoingMerry (afterhours)}
+  \cvitem{Introduction}{A strong programming go (baduk) engine after AlphaGo Zero.}
+  \cvitem{Timeline}{2018.1 -- now}
+  \cvitem{Results}{It's ongoing developed, the aim is based on AlphaGo Zero, 
+  try to find a lightweight solution to avoid huge reinforcement learning computation while have similar or above strength.
+  The latest strength is around amateur 6D on KGS using 1600 playouts.}
+
+  \subsection{Terminator (school)}
+  \cvitem{Introduction}{A promissing spam filtering library making use of combined machine learnaing algorithms, open sourced at github.}
+  \cvitem{Url}{\url{https://github.com/freiz/terminator}}
   \cvitem{Timeline}{2009 -- 2010}
-  \cvitem{Results}{Implemented my ensemble algorithm and ensemble 8 advanced classifiers, can achieve the best results on \emph{All} public datasets.}
-
-\section{Experience}
-
-  \subsection{Open Source}
-  \cvitem{2010}{NSNB spam filter won the first place in large-scale spam filtering competition of Eights Symposium of Search Engine and Web Mining, which is implemented in Python and open sourced at \url{http://code.google.com/p/nsnb}.}
+  \cvitem{Results}{Implemented an advanced ensemble algorithm and ensemble 8 machine learning algorithms, can achieve the best results on \emph{All} public datasets, 
+  with small memory footprint (default 5~MB) and fast (train/predict hundreds mails in 1 second with 1 thread on normal PC). 
+  It won the first place in large-scale spam filtering competition of Eights Symposium of Search Engine and Web Mining and derivated two research papers.} 
 
 \section{Publications}
 \cvlistitem{Congfu Xu, Baojun Su, Yunbiao Cheng, Weike Pan, Li Chen, "An Adaptive Fusion Algorithm for Spam Detection", IEEE Intelligent Systems, vol.29, no. 4, pp. 2-8, July-Aug. 2014, doi:10.1109/MIS.2013.54}

@@ -4,3 +4,5 @@
 .metadata*
 *.bak
 *.DS_Store
+*.gz
+src/*.pdf
